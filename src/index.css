@@ -1,3 +1,9 @@
+:root{
+  --color-01: rgb(223, 85, 108);
+}
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.app__display{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-01);
+}
+#quote-box{
+  background-color: white;
+  width: 400px;
+  padding: 30px;
+  color:  var(--color-01);
+  border-radius: 5px;
+}
+.quote-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#new-quote{
+  color: white;
+  background-color: var(--color-01);
+  border: 10px solid var(--color-01);
+  border-radius: 2px;
+  cursor: pointer;
+}
+#tweet-quote{
+  color: var(--color-01);
 }
